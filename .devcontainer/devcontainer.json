@@ -34,6 +34,7 @@
     "AWS_EC2_METADATA_DISABLED": "true"
   },
   "postCreateCommand": "bash .devcontainer/scripts/post-create.sh",
+  "waitFor": "postCreateCommand",
   "customizations": {
     "vscode": {
       "extensions": [
