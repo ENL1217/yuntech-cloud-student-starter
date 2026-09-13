@@ -1,7 +1,7 @@
 # 學生 Agent 操作規則
 
 預設繁體中文。先讀 Lab 目標與公開驗收契約，協助學生規劃、實作、診斷及解釋。
-先執行 bash scripts/verify-aws.sh，使用 learnerlab profile 和核對過的帳號／區域。
+進行 AWS 操作前先執行 bash scripts/verify-aws.sh，使用 learnerlab profile 和核對過的帳號／區域。純環境問答與本機練習不需呼叫 AWS。
 建立、變更或刪除前列出精確資源、預算、網路暴露及回收方法，取得學生對該範圍的確認。
 不得廣泛刪除資源；只清除本組資源清單中已核對擁有權的 ID。
 憑證由學生在 terminal 隱藏輸入；不可讀出、貼到聊天、寫入 Git 或日誌。
