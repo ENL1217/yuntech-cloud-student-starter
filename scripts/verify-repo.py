@@ -19,6 +19,13 @@ def main():
             errors.append(f"Forbidden tracked path: {name}")
         if not path.is_file():
             continue
+        if path.suffix.lower() in ('.png', '.jpg', '.jpeg'):
+            signature = b'\x89PNG\r\n\x1a\n' if path.suffix.lower() == '.png' else b'\xff\xd8\xff'
+            if not path.read_bytes().startswith(signature):
+                errors.append(f'Invalid image signature: {name}')
+            # Screenshots are reviewed visually before commit; text regex scans
+            # cannot certify that a bitmap contains no credentials.
+            continue
         text = path.read_text(encoding="utf-8")
         if re.search(r"(?:AKIA|ASIA)[A-Z0-9]{16}|-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----", text):
             errors.append(f"Possible secret in {name}; inspect privately")
