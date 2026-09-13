@@ -10,6 +10,8 @@ uv --version
 uvx --version
 jq --version
 curl --version
+opencode --version
+test "$(opencode --version)" = '1.18.30'
 test -x /usr/sbin/sshd
 /usr/sbin/sshd -V
 aws --version 2>&1 | grep -q 'aws-cli/2\.'

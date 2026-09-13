@@ -21,3 +21,7 @@ crash.*.log
 *.log
 .DS_Store
 Thumbs.db
+.opencode/node_modules/
+.opencode/package.json
+.opencode/bun.lock
+.opencode/bun.lockb

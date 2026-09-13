@@ -5,7 +5,7 @@
 3. AWS Academy Start Lab 變綠後，在 AWS Details 找本次三個憑證值。
 4. 在自己的 terminal 執行 `bash scripts/set-learnerlab-credentials.sh`，填帳號、region 與三個隱藏值。不要貼到聊天。
 5. 執行 `bash scripts/verify-aws.sh`；身分比對不能單靠 STS 證明帳號屬於 Academy，需自行核對 console。
-6. VS Code 登入自己的 Copilot，開 Agent，請它讀 AGENTS.md 及當週 Lab，先提出實作與驗收計畫。
+6. 選擇 [OpenCode Terminal Agent](opencode.md)（執行 `opencode`，預設 Big Pickle），或 VS Code 登入自己的 Copilot 並開 Agent。請它讀 AGENTS.md 及當週 Lab，先提出實作與驗收計畫；同一時間先用一個 Agent。
 7. 完成基本自查：`bash scripts/validate.sh`。這不是雲端作品已完成的證明。
 
 Learner Lab 重啟／ExpiredToken 時重做第 4–5 步；Codespace 重啟後外連 IP 可能改變。
