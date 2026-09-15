@@ -4,7 +4,7 @@
 
 ## 第一次啟動（不需要 AWS Lab）
 
-1. 從本範本建立自己的 private repo，開啟 Codespace，等 post-create 完成。
+1. 從本範本建立自己的作業 repo，開啟 Codespace，等 post-create 完成。
 2. VS Code → Terminal → New Terminal，在 repo 根目錄執行：
 
    ```bash
@@ -13,7 +13,7 @@
    ```
 
 3. 確認顯示 `lab` Agent 與 Big Pickle；可用 `/models` 查看選擇。本範本只列指定模型，主模型與輔助模型都固定。
-4. 輸入：`請用繁體中文讀取 README.md，列出 W2 與 W3 的目標。這次只讀檔，不執行 AWS 或修改檔案。`
+4. 輸入：`請用繁體中文讀取 README.md 與兩份 Lab 任務，列出 W1、W2 的目標。這次只讀檔，不執行 AWS 或修改檔案。`
 5. 觀察工具讀檔及回覆；需要核准時，先看命令／差異，再選本次允許（once），不要選永久允許或 auto。
 
 官方程式支援無 API key 的免費模型路徑，但供應商可調整可用性及限制。若出現登入／付款／限流／模型不可用，先記錄錯誤並回報教師；不要為了完成課程自行綁卡或更換付費模型。免費不代表 Codespace 運算與 AWS 資源免費。

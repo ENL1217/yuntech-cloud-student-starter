@@ -1,6 +1,6 @@
 # 開始使用
 
-1. 接受教師 Classroom 邀請或從本 template 建立自己的 private repo，再開 2-core Codespace。
+1. 接受教師 Classroom 邀請或從本 template 建立自己的作業 repo，再開 2-core Codespace。
 2. 等 creation log 出現 `Environment check passed` 與 `Next: bash scripts/set-learnerlab-credentials.sh`，再執行 `bash .devcontainer/scripts/verify-environment.sh`。SSH 可連／Available 並不單獨證明套件已裝好。
 3. AWS Academy Start Lab 變綠後，在 AWS Details 找本次三個憑證值。
 4. 在自己的 terminal 執行 `bash scripts/set-learnerlab-credentials.sh`，填帳號、region 與三個隱藏值。不要貼到聊天。
